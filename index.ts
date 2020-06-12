@@ -17,3 +17,19 @@ console.log("largest numbetr is :" + largest);
 //reverse array 
 var arr = [0, 1, 2, 3].reverse(); 
 console.log("Reversed array is : " + arr );
+
+// Prime Number for n digits
+var enterNumber : any = prompt ("Enter number: ");
+for(var i=2; i<=enterNumber ;i++){
+
+        var isPrime = true;
+
+        for(var j=2; j<i; j++){
+            if(i%j === 0 && i !== j){
+                isPrime = false;
+            }
+        }
+        if(isPrime === true){
+            console.log(i);
+        }
+    }
